@@ -21,16 +21,13 @@
     <PackageReference Include="MSTest.TestAdapter" Version="1.1.17" />
     <PackageReference Include="MSTest.TestFramework" Version="1.1.17" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="System.Security.Permissions" Version="4.4.0-preview2-25405-01" />
   </ItemGroup>
-<!--   
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 
-  <PropertyGroup>
-    <PrepareForRunDependsOn>$(PrepareForRunDependsOn);MyCopyFilesToOutputDirectory</PrepareForRunDependsOn>
-  </PropertyGroup>
-
-  <Target Name="MyCopyFilesToOutputDirectory">
-    <Copy SourceFiles="@(None)" DestinationFolder="$(OutDir)" />
-  </Target> -->
+  <!-- WebDrivers-->
+  <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="2.33.0" />
+    <PackageReference Include="Selenium.WebDriver.GeckoDriver" Version="0.19.1" />
+  </ItemGroup>
 
 </Project>
